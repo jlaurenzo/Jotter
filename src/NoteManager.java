@@ -51,7 +51,7 @@ public class NoteManager {
         System.out.println("----------------------------");
         System.out.println("Read Note");
         DisplayAllNote();
-        System.out.println("Enter Note Id: ");
+        System.out.print("Enter Note Id: ");
         int nNote = userInput.nextInt();
 
         try (BufferedReader noteReader = new BufferedReader(new FileReader("notes.txt"))) {
@@ -63,15 +63,14 @@ public class NoteManager {
                 int id = Integer.parseInt(noteCheck[0].replace("#", ""));
 
                 if (id == nNote) {
-                    System.out.println("");
+                    System.out.println("----------------------------");
                     System.out.println("ID: " + id);
                     System.out.println("Date Created: " + noteCheck[1]);
                     System.out.println("Title: " + noteCheck[2]);
-                    System.out.println("------------------------------");
+                    System.out.println("----------------------------");
                     System.out.println(noteCheck[3]);
-                    System.out.println("------------------------------");
+                    System.out.println("----------------------------");
                 }
-                System.out.println("Error!");
             }
 
         } catch (IOException e) {
