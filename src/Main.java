@@ -36,6 +36,14 @@ public class Main {
                     System.out.println("Read Note");
                     newManager.ReadNote();
                     break;
+                case 4:
+                    System.out.println("Edit Note");
+
+                    break;
+                case 5:
+                    System.out.println("Delete Note");
+
+                    break;
                 default:
                     System.out.println("Error!");
 

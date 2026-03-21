@@ -102,8 +102,9 @@ public class NoteManager {
         } catch (IOException e) {
             System.out.println("Error in accessing (notes.txt)!");
         }
+    }
 
-
+    void EditNote() {
 
     }
 }
